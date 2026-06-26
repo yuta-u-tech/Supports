@@ -81,6 +81,50 @@ a {
   margin-top: 24px;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.contact-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.contact-card h3 {
+  margin: 4px 0 10px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.contact-label {
+  margin: 14px 0 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.placeholder {
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+code {
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #f9faf9;
+  font-size: 0.95em;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -127,5 +171,9 @@ ul + p {
   .hero,
   .section {
     padding: 20px 0;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
