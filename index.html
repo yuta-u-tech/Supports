@@ -8,28 +8,71 @@
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
-    <main class="page">
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="/">Supports<span class="nav-sub">Portal</span></a>
+        <nav class="nav-links" aria-label="メインナビゲーション">
+          <a href="support/">サポート</a>
+          <a href="privacy/">プライバシー</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
       <section class="hero">
-        <p class="eyebrow">Shared Support</p>
-        <h1>アプリサポートポータル</h1>
-        <p class="lead">
-          複数アプリのサポート案内とプライバシーポリシーをまとめる共有ページです。
-        </p>
-        <div class="actions">
-          <a class="button primary" href="support/">サポートページ</a>
-          <a class="button" href="privacy/">プライバシーポリシー</a>
+        <div class="hero-inner">
+          <p class="eyebrow reveal reveal-1">Support Portal</p>
+          <h1 class="hero-title reveal reveal-2">アプリの案内を、<br>ひとつの場所に。</h1>
+          <p class="hero-lead reveal reveal-3">
+            Yamanote Runner を起点に、これから増えるアプリのサポートとプライバシーポリシーをまとめて運用するためのポータルです。
+          </p>
+          <div class="actions reveal reveal-3">
+            <a class="btn btn-primary" href="support/">サポートを見る</a>
+            <a class="btn btn-text" href="privacy/">プライバシーポリシー&nbsp;›</a>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <h2>対応中のアプリ</h2>
-        <p>
-          各アプリの案内は、このポータルの中に追加して運用できます。
-        </p>
-        <ul>
-          <li>掲載準備中のアプリ: サポートページとプライバシーポリシーを追加予定</li>
-        </ul>
+        <div class="container">
+          <header class="section-head center">
+            <p class="label">Apps</p>
+            <h2>対応中のアプリ</h2>
+            <p class="section-sub">
+              各アプリの案内はこのポータルに追加して運用できます。構成を複製すれば、新しいアプリもすぐ並べられます。
+            </p>
+          </header>
+
+          <div class="grid">
+            <article class="card">
+              <span class="badge">公開中</span>
+              <h3>Yamanote Runner</h3>
+              <p>
+                サポート窓口、個人の連絡先、プライバシー文面を分けて管理できます。
+              </p>
+              <a class="card-link" href="support/">サポートページへ&nbsp;›</a>
+            </article>
+
+            <article class="card">
+              <span class="badge alt">テンプレート</span>
+              <h3>新しいアプリ</h3>
+              <p>
+                既存の構成を複製し、リンク先と文面を差し替えてアプリごとの案内を追加してください。
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Supports</span>
+        <nav class="footer-links" aria-label="フッターナビゲーション">
+          <a href="support/">サポート</a>
+          <a href="privacy/">プライバシー</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

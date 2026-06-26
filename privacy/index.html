@@ -8,62 +8,123 @@
     <link rel="stylesheet" href="../assets/styles.css">
   </head>
   <body>
-    <main class="page narrow">
-      <header class="section">
-        <p class="eyebrow">Privacy Policy</p>
-        <h1>共有プライバシーポリシー</h1>
-        <p class="lead">
-          最終更新日: 2026年6月26日
-        </p>
-      </header>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="../">Supports<span class="nav-sub">Privacy</span></a>
+        <nav class="nav-links" aria-label="メインナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../support/">サポート</a>
+        </nav>
+      </div>
+    </header>
 
-      <section class="section">
-        <p>
-          本プライバシーポリシーは、このサイトで案内する各アプリに共通する情報の取り扱いを説明します。アプリごとの追加事項がある場合は、個別ページまたは追記で明記します。
-        </p>
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow reveal reveal-1">Privacy Policy</p>
+          <h1 class="hero-title reveal reveal-2">プライバシー<br>ポリシー</h1>
+          <p class="hero-lead reveal reveal-3">
+            このサイトで案内する各アプリに共通する、情報の取り扱いを説明します。
+          </p>
+          <p class="meta reveal reveal-3">最終更新日: 2026年6月26日</p>
+        </div>
       </section>
 
       <section class="section">
-        <h2>収集・利用する情報</h2>
-        <ul>
-          <li>Yamanote Runner が機能提供のために取得する設定情報、履歴、購入状態</li>
-          <li>その他の対応アプリが機能提供のために取得する設定情報、履歴、購入状態</li>
-          <li>HealthKit から取得する歩数や歩行・ランニング距離などのヘルスデータ</li>
-          <li>位置情報を使う機能で必要になる現在地情報</li>
-        </ul>
-        <p>
-          これらの情報は、アプリの機能提供、進捗表示、履歴表示、目的地候補の検索、購入状態の確認に利用します。
-        </p>
+        <div class="container">
+          <div class="grid">
+            <article class="card">
+              <span class="badge">データ</span>
+              <h3>端末内に保存</h3>
+              <p>設定や履歴は端末内に保存され、第三者のサーバーへは送信しません。</p>
+            </article>
+            <article class="card">
+              <span class="badge">HealthKit</span>
+              <h3>ヘルスデータ</h3>
+              <p>歩数と、歩行・ランニング距離を読み取って利用します。</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="section">
-        <h2>保存方法</h2>
-        <p>
-          Yamanote Runner の設定や履歴は端末内に保存されます。HealthKit のデータは Apple の HealthKit を通じて読み取り、第三者のサーバーへ送信することはありません。
-        </p>
+        <div class="container prose">
+          <p>
+            本プライバシーポリシーは、このサイトで案内する各アプリに共通する情報の取り扱いを説明します。アプリごとの追加事項がある場合は、個別ページまたは追記で明記します。
+          </p>
+        </div>
       </section>
 
       <section class="section">
-        <h2>第三者提供</h2>
-        <p>
-          本アプリは、収集した情報を第三者に提供しません。
-        </p>
+        <div class="container">
+          <header class="section-head">
+            <p class="label">Data</p>
+            <h2>収集・利用する情報</h2>
+          </header>
+          <div class="grid">
+            <article class="card">
+              <p class="label">Yamanote Runner</p>
+              <p>進捗表示、履歴表示、購入状態の確認のために、設定情報や履歴を扱います。</p>
+            </article>
+            <article class="card">
+              <p class="label">Common</p>
+              <p>歩数、歩行・ランニング距離、位置情報など、各アプリが必要とするデータを扱います。</p>
+            </article>
+          </div>
+          <p class="note">
+            この段落をベースに、アプリごとの追加説明を後ろへ足していく形にすると管理しやすくなります。
+          </p>
+        </div>
       </section>
 
       <section class="section">
-        <h2>広告・トラッキング</h2>
-        <p>
-          本アプリは広告を表示せず、広告トラッキングも行いません。
-        </p>
+        <div class="container prose">
+          <header class="section-head">
+            <p class="label">Storage</p>
+            <h2>保存方法</h2>
+          </header>
+          <p>
+            Yamanote Runner の設定や履歴は端末内に保存されます。HealthKit のデータは Apple の HealthKit を通じて読み取り、第三者のサーバーへ送信することはありません。
+          </p>
+        </div>
       </section>
 
       <section class="section">
-        <h2>お問い合わせ</h2>
-        <p>
-          本ポリシーに関するお問い合わせは、公開後に案内する共有ポータルの GitHub Issues からお願いします。
-        </p>
-        <p>公開後に Issue URL を差し込みます。</p>
+        <div class="container prose">
+          <header class="section-head">
+            <p class="label">Sharing</p>
+            <h2>第三者提供・広告</h2>
+          </header>
+          <p>
+            本アプリは、収集した情報を第三者に提供しません。また、広告の表示や広告トラッキングも行いません。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container prose">
+          <header class="section-head">
+            <p class="label">Contact</p>
+            <h2>お問い合わせ</h2>
+          </header>
+          <p>
+            本ポリシーに関するお問い合わせは、公開後に案内する共有ポータルの GitHub Issues からお願いします。公開後に Issue の URL を差し込みます。
+          </p>
+          <p>
+            アプリごとに連絡先が分かれる場合は、<a href="../support/">サポートページ</a>側に追記してください。
+          </p>
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Supports</span>
+        <nav class="footer-links" aria-label="フッターナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../support/">サポート</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

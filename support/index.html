@@ -8,73 +8,106 @@
     <link rel="stylesheet" href="../assets/styles.css">
   </head>
   <body>
-    <main class="page">
-      <header class="section">
-        <p class="eyebrow">Support</p>
-        <h1>共有サポートページ</h1>
-        <p class="lead">
-          複数アプリで共通運用する使い方、購入復元、問い合わせ方法の案内です。
-        </p>
-      </header>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="../">Supports<span class="nav-sub">Support</span></a>
+        <nav class="nav-links" aria-label="メインナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../privacy/">プライバシー</a>
+        </nav>
+      </div>
+    </header>
 
-      <section class="section">
-        <h2>お問い合わせ</h2>
-        <p>
-          このページは、アプリごとの問い合わせ先をそのまま差し替えられるようにしてあります。下の各欄を更新してください。
-        </p>
-        <div class="contact-grid">
-          <article class="contact-card">
-            <p class="eyebrow">App Support</p>
-            <h3>Yamanote Runner</h3>
-            <p class="contact-label">問い合わせ先</p>
-            <p class="placeholder">
-              ここに Yamanote Runner の問い合わせ先を書いてください。
-              例: `support@yamanoterunner.example` または GitHub Issues の URL
-            </p>
-            <p class="contact-label">問い合わせに含める内容</p>
-            <p>
-              アプリ名、端末名、OS バージョン、再現手順、発生日時を添えてください。
-            </p>
-          </article>
-
-          <article class="contact-card">
-            <p class="eyebrow">Personal Contact</p>
-            <h3>個人の窓口</h3>
-            <p class="contact-label">問い合わせ先</p>
-            <p class="placeholder">
-              ここにあなた個人の問い合わせ先を書いてください。
-              例: <code>your-name@example.com</code>
-            </p>
-            <p class="contact-label">使い分け</p>
-            <p>
-              アプリの不具合は上の窓口、運用全般はこの窓口、という形で分けられます。
-            </p>
-          </article>
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow reveal reveal-1">Support</p>
+          <h1 class="hero-title reveal reveal-2">困ったときの、<br>連絡先はここに。</h1>
+          <p class="hero-lead reveal reveal-3">
+            アプリの不具合と運用全般の窓口を分けて掲載しています。アプリが増えても、同じ形のまま案内を足していけます。
+          </p>
         </div>
-        <p class="note">
-          この2つの欄を書き換えれば、そのまま公開しやすい形になります。
-        </p>
       </section>
 
       <section class="section">
-        <h2>アプリ概要</h2>
-        <p>
-          対応アプリは、iPhone の健康記録、位置情報、課金機能などをそれぞれの用途に合わせて使います。
-        </p>
-        <p>
-          このページは共通の問い合わせ窓口として運用し、アプリごとの補足は必要に応じて追加します。
-        </p>
+        <div class="container">
+          <header class="section-head">
+            <p class="label">Contact</p>
+            <h2>お問い合わせ</h2>
+            <p class="section-sub">
+              用途に合わせて窓口を選んでください。下の連絡先欄を差し替えるだけで公開できます。
+            </p>
+          </header>
+
+          <div class="grid">
+            <article class="card">
+              <span class="badge">アプリの不具合</span>
+              <h3>Yamanote Runner</h3>
+              <p class="field-label">問い合わせ先</p>
+              <p class="placeholder">
+                ここに Yamanote Runner の問い合わせ先を入れてください。<br>
+                例: <code>support@yamanoterunner.example</code> または GitHub Issues の URL
+              </p>
+              <p class="field-label">問い合わせに含める内容</p>
+              <p>
+                アプリ名、端末名、OS バージョン、再現手順、発生日時を添えてください。
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="badge alt">運用全般</span>
+              <h3>個人の窓口</h3>
+              <p class="field-label">問い合わせ先</p>
+              <p class="placeholder">
+                ここにあなた個人の問い合わせ先を入れてください。<br>
+                例: <code>your-name@example.com</code>
+              </p>
+              <p class="field-label">使い分け</p>
+              <p>
+                アプリの不具合は左の窓口、運用全般はこの窓口、という形で分けられます。
+              </p>
+            </article>
+          </div>
+          <p class="note">
+            この2つの欄を書き換えれば、そのまま公開できます。アプリが増えたらカードを複製して増やせます。
+          </p>
+        </div>
       </section>
 
       <section class="section">
-        <h2>サブスクと購入復元</h2>
-        <p>
-          サブスクリプションの購入後に表示が反映されない場合は、アプリ内の「購入を復元する」を試してください。
-        </p>
-        <p>
-          それでも解決しない場合は、App Store にサインインしている Apple ID を確認したうえで、公開後の Issue から状況を送ってください。
-        </p>
+        <div class="container">
+          <div class="grid">
+            <article class="card">
+              <p class="label">Overview</p>
+              <h3>アプリ概要</h3>
+              <p>
+                対応アプリは、iPhone の健康記録・位置情報・課金機能などを、それぞれの用途に合わせて使います。このページは共通の問い合わせ窓口として運用し、アプリごとの補足は必要に応じて追加します。
+              </p>
+            </article>
+
+            <article class="card">
+              <p class="label">Billing</p>
+              <h3>サブスクと購入復元</h3>
+              <p>
+                購入後に表示が反映されない場合は、アプリ内の「購入を復元する」をお試しください。
+              </p>
+              <p>
+                解決しない場合は、App Store にサインイン中の Apple ID を確認のうえ、上の窓口へ状況をお送りください。
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Supports</span>
+        <nav class="footer-links" aria-label="フッターナビゲーション">
+          <a href="../">ホーム</a>
+          <a href="../privacy/">プライバシー</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
