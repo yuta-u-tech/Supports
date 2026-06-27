@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>共有サポートページ</title>
-    <meta name="description" content="複数アプリで共通運用する問い合わせ方法、アプリ概要、サブスクと購入復元の案内。">
+    <title>サポート | Supports</title>
+    <meta name="description" content="アプリのお問い合わせ窓口と、よくある質問（サブスクの復元、ヘルスケアの権限、データ削除、動作環境）。">
     <link rel="stylesheet" href="../assets/styles.css">
+
+    <!--
+      ============================================================
+        メールアドレスの差し替えはここだけ
+        このファイル内の  your-address@example.com  を
+        実際のサポート用アドレスに置換してください（エディタの
+        「置換」で your-address@example.com を一括置換すればOK）。
+      ============================================================
+    -->
   </head>
   <body>
     <header class="nav">
@@ -22,9 +31,9 @@
       <section class="hero">
         <div class="hero-inner">
           <p class="eyebrow reveal reveal-1">Support</p>
-          <h1 class="hero-title reveal reveal-2">困ったときの、<br>連絡先はここに。</h1>
+          <h1 class="hero-title reveal reveal-2">サポート</h1>
           <p class="hero-lead reveal reveal-3">
-            アプリの不具合と運用全般の窓口を分けて掲載しています。アプリが増えても、同じ形のまま案内を足していけます。
+            アプリの使い方や不具合について、お問い合わせ先とよくある質問をまとめています。
           </p>
         </div>
       </section>
@@ -35,66 +44,77 @@
             <p class="label">Contact</p>
             <h2>お問い合わせ</h2>
             <p class="section-sub">
-              用途に合わせて窓口を選んでください。下の連絡先欄を差し替えるだけで公開できます。
+              不具合のご報告・ご要望・購入に関するご質問は、メールでお気軽にどうぞ。通常2〜3日以内に返信します。
             </p>
           </header>
 
-          <div class="grid">
-            <article class="card">
-              <span class="badge">アプリの不具合</span>
-              <h3>Yamanote Runner</h3>
-              <p class="field-label">問い合わせ先</p>
-              <p class="placeholder">
-                ここに Yamanote Runner の問い合わせ先を入れてください。<br>
-                例: <code>support@yamanoterunner.example</code> または GitHub Issues の URL
-              </p>
-              <p class="field-label">問い合わせに含める内容</p>
-              <p>
-                アプリ名、端末名、OS バージョン、再現手順、発生日時を添えてください。
-              </p>
-            </article>
-
-            <article class="card">
-              <span class="badge alt">運用全般</span>
-              <h3>個人の窓口</h3>
-              <p class="field-label">問い合わせ先</p>
-              <p class="placeholder">
-                ここにあなた個人の問い合わせ先を入れてください。<br>
-                例: <code>your-name@example.com</code>
-              </p>
-              <p class="field-label">使い分け</p>
-              <p>
-                アプリの不具合は左の窓口、運用全般はこの窓口、という形で分けられます。
-              </p>
-            </article>
+          <div class="contact">
+            <a class="btn btn-primary" href="mailto:your-address@example.com?subject=%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで問い合わせる</a>
+            <a class="contact-mail" href="mailto:your-address@example.com">your-address@example.com</a>
           </div>
+
           <p class="note">
-            この2つの欄を書き換えれば、そのまま公開できます。アプリが増えたらカードを複製して増やせます。
+            スムーズな対応のため、<strong>アプリ名・端末名（例: iPhone 15）・iOS のバージョン・発生手順・発生日時</strong>を添えていただけると助かります。
           </p>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="grid">
-            <article class="card">
-              <p class="label">Overview</p>
-              <h3>アプリ概要</h3>
-              <p>
-                対応アプリは、iPhone の健康記録・位置情報・課金機能などを、それぞれの用途に合わせて使います。このページは共通の問い合わせ窓口として運用し、アプリごとの補足は必要に応じて追加します。
-              </p>
-            </article>
+          <header class="section-head">
+            <p class="label">FAQ</p>
+            <h2>よくある質問</h2>
+            <p class="section-sub">
+              先にこちらをご確認いただくと、その場で解決できることがあります。
+            </p>
+          </header>
 
-            <article class="card">
-              <p class="label">Billing</p>
-              <h3>サブスクと購入復元</h3>
-              <p>
-                購入後に表示が反映されない場合は、アプリ内の「購入を復元する」をお試しください。
-              </p>
-              <p>
-                解決しない場合は、App Store にサインイン中の Apple ID を確認のうえ、上の窓口へ状況をお送りください。
-              </p>
-            </article>
+          <div class="faq">
+            <details>
+              <summary>購入したのに有料機能が使えない・反映されない</summary>
+              <div class="faq-a">
+                <p>
+                  まずアプリ内の「購入を復元」をお試しください。サブスクリプションや買い切りの購入は、これで元の状態に戻せます。
+                </p>
+                <p>
+                  それでも反映されない場合は、App Store にサインイン中の Apple ID が購入時と同じものかをご確認のうえ、上記のメール窓口までご連絡ください。
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>歩数や距離が表示されない</summary>
+              <div class="faq-a">
+                <p>
+                  ヘルスケアの読み取りが許可されていない可能性があります。iPhone の「設定 → アプリ → 該当アプリ → ヘルスケア」、または「ヘルスケア」アプリの「共有 → App」から、<strong>歩数</strong>と<strong>ウォーキング＋ランニングの距離</strong>の読み取りが ON になっているかご確認ください。
+                </p>
+                <p>
+                  初回の許可ダイアログで「許可しない」を選んだ場合も、上記の手順から後で有効にできます。
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>アプリのデータを削除したい</summary>
+              <div class="faq-a">
+                <p>
+                  アプリが保存した設定や履歴は端末内に保存されており、アプリをアンインストールすると一緒に削除されます。
+                </p>
+                <p>
+                  歩数などのヘルスデータは「ヘルスケア」アプリ側に保存されているため、アプリを削除しても残ります。これらを消す場合は「ヘルスケア」アプリから個別に削除してください。
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>対応している端末・iOS は？</summary>
+              <div class="faq-a">
+                <!-- 対応 iOS バージョンは実際のアプリに合わせて調整してください -->
+                <p>
+                  iPhone（iOS 16 以降）に対応しています。歩数・距離の記録には、ヘルスケア（HealthKit）に対応した iPhone が必要です。
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </section>

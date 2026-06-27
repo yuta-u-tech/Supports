@@ -341,102 +341,18 @@ p {
   color: var(--muted);
 }
 
-/* ---------- Steps / lists ---------- */
-
-.steps {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: step;
-}
-
-.steps li {
-  position: relative;
-  padding: 14px 0 14px 44px;
-  border-top: 1px solid var(--line-soft);
-  color: var(--muted);
-}
-
-.steps li:first-child {
-  border-top: 0;
-}
-
-.steps li::before {
-  counter-increment: step;
-  content: counter(step);
-  position: absolute;
-  left: 0;
-  top: 13px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.facts {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.facts li {
-  padding: 16px 0;
-  border-top: 1px solid var(--line-soft);
-}
-
-.facts li:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.facts strong {
-  display: block;
-  margin: 8px 0 4px;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.facts p {
-  color: var(--muted);
-}
-
-/* ---------- Contact / detail fields ---------- */
-
-.field-label {
-  margin: 20px 0 8px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--faint);
-}
-
-.field-label:first-of-type {
-  margin-top: 4px;
-}
-
-.placeholder {
-  margin: 0;
-  padding: 16px 18px;
-  border: 1px dashed var(--line);
-  border-radius: var(--radius);
-  background: var(--surface-2);
-  color: var(--text);
-  line-height: 1.6;
-}
+/* ---------- Notes & code ---------- */
 
 .note {
   margin-top: 20px;
   color: var(--faint);
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.note strong {
+  color: var(--muted);
+  font-weight: 600;
 }
 
 code {
@@ -460,6 +376,84 @@ code {
 
 .prose p + p {
   margin-top: 16px;
+}
+
+/* ---------- Contact ---------- */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 24px;
+}
+
+.contact-mail {
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+}
+
+.contact-mail:hover {
+  text-decoration: underline;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq {
+  border-top: 1px solid var(--line-soft);
+}
+
+.faq details {
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 2px;
+  cursor: pointer;
+  list-style: none;
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--faint);
+  transition: color 0.25s var(--ease);
+}
+
+.faq summary:hover::after {
+  color: var(--accent);
+}
+
+.faq details[open] summary::after {
+  content: "\2212";
+  color: var(--accent);
+}
+
+.faq-a {
+  padding: 0 2px 24px;
+  max-width: 66ch;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.faq-a p + p {
+  margin-top: 12px;
 }
 
 /* ---------- Footer ---------- */
