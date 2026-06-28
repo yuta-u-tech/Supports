@@ -19,7 +19,10 @@
   <body>
     <header class="nav">
       <div class="nav-inner">
-        <a class="nav-brand" href="/">Supports<span class="nav-sub">Portal</span></a>
+        <a class="nav-brand" href="/">
+          <span class="nav-logo" aria-hidden="true">S</span>
+          <span class="nav-name">Supports<span class="nav-sub">&thinsp;Portal</span></span>
+        </a>
         <nav class="nav-links" aria-label="メインナビゲーション">
           <a href="apps/yamanote-runner/">サポート</a>
           <a href="apps/yamanote-runner/privacy/">プライバシー</a>
@@ -31,7 +34,10 @@
       <section class="hero">
         <div class="hero-inner">
           <p class="eyebrow reveal reveal-1">Support Portal</p>
-          <h1 class="hero-title reveal reveal-2">アプリの案内を、<br>ひとつの場所に。</h1>
+          <h1 class="hero-title reveal reveal-2">
+            アプリの案内を、<br>
+            <span class="gradient-text">ひとつの場所に。</span>
+          </h1>
           <p class="hero-lead reveal reveal-3">
             個人開発したアプリのサポートとプライバシーポリシーを、ここにまとめています。
           </p>
@@ -44,7 +50,7 @@
 
       <section class="section">
         <div class="container">
-          <header class="section-head center">
+          <header class="section-head center reveal reveal-1">
             <p class="label">Apps</p>
             <h2>アプリ</h2>
             <p class="section-sub">
@@ -53,7 +59,7 @@
           </header>
 
           <div class="grid">
-            <a class="card" href="apps/yamanote-runner/">
+            <a class="card reveal reveal-2" href="apps/yamanote-runner/">
               <span class="badge">公開中</span>
               <h3>Yamanote Runner</h3>
               <p>
@@ -62,7 +68,7 @@
               <span class="card-link">サポートへ&nbsp;›</span>
             </a>
 
-            <article class="card">
+            <article class="card reveal reveal-3">
               <span class="badge alt">近日追加</span>
               <h3>新しいアプリ</h3>
               <p>
@@ -83,5 +89,13 @@
         </nav>
       </div>
     </footer>
+
+    <script>
+      const io = new IntersectionObserver(
+        entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
   </body>
 </html>

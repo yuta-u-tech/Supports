@@ -19,7 +19,10 @@
   <body>
     <header class="nav">
       <div class="nav-inner">
-        <a class="nav-brand" href="../../">Supports<span class="nav-sub">Yamanote Runner</span></a>
+        <a class="nav-brand" href="../../">
+          <span class="nav-logo" aria-hidden="true">S</span>
+          <span class="nav-name">Supports<span class="nav-sub">&thinsp;· Yamanote Runner</span></span>
+        </a>
         <nav class="nav-links" aria-label="メインナビゲーション">
           <a href="../../">ホーム</a>
           <a href="privacy/">プライバシー</a>
@@ -31,7 +34,7 @@
       <section class="hero">
         <div class="hero-inner">
           <p class="eyebrow reveal reveal-1">Support</p>
-          <h1 class="hero-title reveal reveal-2">サポート</h1>
+          <h1 class="hero-title reveal reveal-2"><span class="gradient-text">サポート</span></h1>
           <p class="hero-lead reveal reveal-3">
             Yamanote Runner の使い方や不具合について、お問い合わせ先とよくある質問をまとめています。
           </p>
@@ -40,7 +43,7 @@
 
       <section class="section">
         <div class="container">
-          <header class="section-head">
+          <header class="section-head reveal reveal-1">
             <p class="label">Contact</p>
             <h2>お問い合わせ</h2>
             <p class="section-sub">
@@ -48,12 +51,12 @@
             </p>
           </header>
 
-          <div class="contact">
+          <div class="contact reveal reveal-2">
             <a class="btn btn-primary" href="mailto:yutautech@gmail.com?subject=Yamanote%20Runner%20%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで問い合わせる</a>
             <a class="contact-mail" href="mailto:yutautech@gmail.com">yutautech@gmail.com</a>
           </div>
 
-          <p class="note">
+          <p class="note reveal reveal-3">
             スムーズな対応のため、<strong>端末名（例: iPhone 15）・iOS のバージョン・発生手順・発生日時</strong>を添えていただけると助かります。
           </p>
         </div>
@@ -61,7 +64,7 @@
 
       <section class="section">
         <div class="container">
-          <header class="section-head">
+          <header class="section-head reveal reveal-1">
             <p class="label">FAQ</p>
             <h2>よくある質問</h2>
             <p class="section-sub">
@@ -69,7 +72,7 @@
             </p>
           </header>
 
-          <div class="faq">
+          <div class="faq reveal reveal-2">
             <details>
               <summary>購入したのに有料機能が使えない・反映されない</summary>
               <div class="faq-a">
@@ -140,5 +143,13 @@
         </nav>
       </div>
     </footer>
+
+    <script>
+      const io = new IntersectionObserver(
+        entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
   </body>
 </html>
